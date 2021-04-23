@@ -10,6 +10,7 @@ React Version: ^17.0.2
 A basic slideshow application forked from HackerRank certification Test Suite.
 
 Create a basic slideshow application, as shown below. Application requirements are given below, and the finished application must pass all of the unit tests.
+
 Your task is to complete the implementation of src/components/Slides.js according to the following requirements:
 
 The Slides component takes an array of slides as a prop. Each element of this array denotes a single slide and is an object with 2 properties: string title and string text.
