@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# React: Slideshow App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Environment
+React Version: ^17.0.2
 
-In the project directory, you can run:
+## Project Specifications
 
-### `npm start`
+A basic slideshow application forked from HackerRank certification Test Suite.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Create a basic slideshow application, as shown below. Application requirements are given below, and the finished application must pass all of the unit tests.
+Your task is to complete the implementation of src/components/Slides.js according to the following requirements:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The Slides component takes an array of slides as a prop. Each element of this array denotes a single slide and is an object with 2 properties: string title and string text.
+On application launch, the first slide must be rendered.
+Clicking on the "Next" button shows the next slide. This button is disabled when the current slide is the last one.
+Clicking on the "Prev" button shows the previous slide. This button is disabled when the current slide is the first one.
+Clicking on the "Restart" button returns to the first slide. This button is disabled when the current slide is the first one.
+You can assume that the passed slides array contains at least one slide.
+Initially, the file is filled with boilerplate code. Note the following:
 
-### `npm test`
+The "Restart" button must have data-testid="button-restart".
+The "Prev" button must have data-testid="button-prev".
+The "Next" button must have data-testid="button-next".
+Each slide's title must be rendered as an <h1> element with data-testid="title".
+Each slide's text must be rendered as a <p> element with data-testid="text".
+Please note that the component has the above data-testid attributes for test cases and certain classes and ids for rendering purposes. It is advised not to change them.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Read-Only Files
 
-### `npm run build`
+src/App.test.js
+## Commands
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+run:
+bash bin/env_setup && . $HOME/.nvm/nvm.sh && npm start
+install:
+bash bin/env_setup && . $HOME/.nvm/nvm.sh && npm install
+test:
+bash bin/env_setup && . $HOME/.nvm/nvm.sh && npm test
